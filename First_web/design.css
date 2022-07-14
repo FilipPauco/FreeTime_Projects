@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+}
+
+:root{
+    --g:#D1D1D1;
+    --f: Arial;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+body{background-color: lightgrey ;}
+
+.navbar{
+    background-color: lightgray;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 5px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-left: 28%;
+    display: flex;
+    width: 840px;
+    height: 60px;
+    animation: fade 1s;
+}
+
+@keyframes fade{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.logo{
+    margin-left: 50px;
+    display: flexbox;
+    margin-top: 5px;
+    height: 80%;
+}
+
+.logo:hover{
+        animation: rotation 0.2s, rotation2 0.25s 0.2s, rotation3 0.35s 0.45s;
+}
+
+@keyframes rotation{
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(36deg);
+    }
+    40% {
+        transform: rotate(72deg);
+    }
+    60% {
+        transform: rotate(108deg);
+    }
+    80% {
+        transform: rotate(144deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+@keyframes rotation2{
+    0% {
+        transform: rotate(180deg);
+    }
+    34% {
+        transform: rotate(216deg);
+    }
+    67% {
+        transform: rotate(252deg);
+    }
+    100% {
+        transform: rotate(288deg);
+    }
+}
+
+@keyframes rotation3{
+    0% {
+        transform: rotate(288deg);
+    }
+    25% {
+        transform: rotate(306deg);
+    }
+    50% {
+        transform: rotate(324deg);
+    }
+    75% {
+        transform: rotate(342deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.R{
+    list-style-type: none;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    margin-right: 20px;
+    margin-left: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:650;
+    text-decoration: none;
+}
+
+.R:first-child{
+    margin-left: 40%;
+}
+
+.R:hover{
+    opacity: 60%;
+    transform: translateY(-1px);
+}
+
+.text, .textM{
+    width: max-content;
+    height: 50px;
+    margin-top: 40vh;
+    margin-left: 80vh;
+    text-align: center;
+    font-family: Courier, monospace;
+    position: relative;
+}
+
+.text{
+    margin-top: 0vh;
+    margin-left: 92vh;
+}
+
+
+
+.t2::before, .t2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.t2::before{
+    background-color: lightgray;
+    animation: typewritter 2.5s 1s steps(11) forwards;
+}
+
+.t2::after{
+    background-color: black;
+    width: 0.1em;
+    height: 1.1em;
+    visibility: hidden;
+    animation: typewritter 2.5s 1s steps(11) forwards, blink 750ms 1s steps(11) infinite;
+    
+}
+
+.t21{
+    margin-left: -10vh
+}
+.t21::before, .t21::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -10vh;
+}
+
+.t21::before{
+    background-color: lightgray;
+    animation: typewritter 3.25s 1s steps(32) forwards;
+}
+
+.t21::after{
+    background-color: black;
+    width: 0.1em;
+    height: 1.1em;
+    visibility: hidden;
+    animation: typewritter 3.25s 1s steps(32) forwards, blink 750ms 1s steps(32) infinite;
+    
+}
+
+@keyframes typewritter {
+    to{
+        visibility: visible;
+        left: 100%;}
+}
+
+@keyframes blink {
+    to{
+        background: transparent;
+    }
+}
+
+.textM{
+    
+    opacity: 0;
+    transform: translateY(-4rem);
+    animation: fadeS 1.25s ease forwards;
+}
+
+.t12{
+   width: 45vh;
+}
+
+@keyframes fadeS {
+    to{
+        opacity: 1;
+        transform: translateY(-1em);
+    }
+}
+
+.mid{
+    width: 100%;
+    height: 10px;
+    background-color: rgb(118, 102, 87);
+    opacity: 80%;
+}
+
+.footer{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: lightgray;
+    border-radius: 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:end;
+}
+
+.media{
+    margin-right: 40px;
+
+}
+
+.prr{
+    margin: 42.4em;
+    animation: fade 2s ease ;
+}
+
+.bjg{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.98em;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: rgb(118, 102, 87);
+    height: 52em;
+    width: 50%;
+    margin: auto;
+    margin-top: -40px;
+}
+
+.score{
+    border-left: 3px solid rgb(0, 0, 0);
+    border-right: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding-top: 20px;
+    background-color: rgb(118, 102, 87);
+    display: flex;
+    justify-content: space-around;
+}
+
+.scoreM {
+    border: 3px solid rgb(0, 0, 0);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    display: flex;
+  flex-wrap: wrap;
+    background-color: rgb(118, 102, 87);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.scoreM h1{
+    margin-left: 5em;
+}
+
+.line{
+    position: absolute;
+    width: 3px;
+    height: 110px;
+    margin-top: -45px;
+    background-color: black;
+    margin-left: calc(50% * 5/8);
+}
+
+.boxes{
+    background-color: red;
+    width: 100%;
+    height: 33em;
+    border-bottom: 3px solid black;
+}
+
+.one{
+    padding-top: 5px;
+    text-align: center;
+    height: 50%;
+    background-color: lightgray;
+}
+
+.two{
+    padding-top: 5px;
+    text-align: center;
+    border-top: 5px solid black;
+    border-bottom: 3px solid black;
+    height: 50%;
+    background-color: lightgray;
+}
+
+.cardT{
+    margin-top: 30px;
+    animation: fade 1s;
+}
+
+.btns{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+}
+
+button:hover{
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+button:disabled{
+    opacity: 20%;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    color: lightgray;
+    border: none;
+    width: 100px;
+    height:25px;
+    background-color: black;
+    outline: 2px solid black;
+    outline-offset: 3px;
+    margin-left: 20px;
+}
+
+.whoWon{
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin-top: 40px;
+    background-color: lightgray;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: smaller;
+}
+
+.whoWon h1{
+   margin-left: 50px;
+}
+
+                        /* ------- */ 
+
+.aboutBoxes{
+    background-color: rgba(118, 102, 87,0.6);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20vh;
+    max-width: fit-content;
+    margin-left: 37vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xxx-large;
+    font-weight: 700;
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.B:hover{
+    transform: rotateY(180deg);
+}
+.B{
+    cursor: pointer;
+    margin-right: 6vh;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.ab{
+    margin-left: 6vh;
+}
+
+
+.front{
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    
+}
+
+.back{
+    margin-left: -2px;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.aboutText{
+    background-color:rgba(118, 102, 87,0.7);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    max-width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    width: 50vh;
+    height: 10vh;
+    margin-left: 39vw;
+    display: inline-block;
+    word-wrap: break-word;
+    margin-top: 2vh;
+}
+
+.rtt{
+    animation: fade 5s;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Logos/zemko.svg" type="image/png">
+    <link rel="stylesheet" href="design.css">
+    <title>QUENTINN</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home.html"><img class="logo" src="Logos/zemko.svg" alt=""></a>
+        <li class="R"><span><a href="home.html">Home</span></a></li>
+        <li class="R"><span><a href="index.html">Blackjack</span></a></li>
+        <li class="R"><span><a href="tba.html">TBA</span></a></li>
+        <li class="R"><span><a href="about.html">About</span></a></li>
+    </div>
+    <br><br><br><br>
+    <div class="bjg">
+        <div class="scoreM">
+            <h1>Your score</h1>
+            <h1>Dealer score</h1>
+        </div>
+        <div class="line"></div>
+        <div class="score">
+            <h1 id="ba">0</h1>
+            <h1 id="ba2">X</h1>
+            <h1 id="ca">0</h1>
+        </div>
+        <div class="boxes">
+            <div class="one">
+                <h2>Dealer</h2>
+                <div class="cardT">
+                    <img src="" id="C1" alt="">
+                    <img src="" id="C2" alt="">
+                    <img src="" id="C3" alt="">
+                    <img src="" id="C4" alt="">
+                    <img src="" id="C5" alt="">
+                    <img src="" id="C6" alt="">
+                </div>
+            </div>
+            <div class="two">
+                <h2>Player</h2>
+                <div class="cardT">
+                    <img src="" id="D1" alt="">
+                    <img src="" id="D1a" alt="">
+                    <img src="" id="D1b" alt="">
+                    <img src="" id="D1c" alt="">
+                    <img src="" id="D1d" alt="">
+                    <img src="" id="D2" alt="">
+                    <img src="" id="D3" alt="">
+                    <img src="" id="D4" alt="">
+                    <img src="" id="D5" alt="">
+                    <img src="" id="D6" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="btns">
+            <button id="Start">Start</button>
+            <button id="Hit" disabled="True">Hit</button>
+            <button id="Stand" disabled="True">Stand</button>
+            <button id="dd" disabled="True">Double Down</button>
+            <button id="split" disabled="True">Split</button>
+            <button id="Reset" disabled="True">Reset</button>
+        </div>
+        <div class="whoWon">
+            <h1 id="winner"></h1>
+            <h1 id="winner2"></h1>
+        </div>
+    </div> 
+    <div class="footer">
+        <h3 class="prr">Discover</h3>
+        <a href="https://www.instagram.com/ffpauco/"><img src="Logos/IG.svg" alt="" class="media" width="25" height="25"></a>
+        <a href="https://github.com/FilipPauco?tab=repositories"><img src="Logos/gh.svg" alt="" class="media" width="25" height="25"></a>
+    </div>
+    <script src="a.js"></script>
+</body>
+</html>
